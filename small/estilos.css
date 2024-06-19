@@ -1,0 +1,49 @@
+*, ::after, ::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 400vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+}
+
+.hero__section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: clamp(18px, 5vw ,36px);
+    padding: 2rem;
+}
+
+.hero__links{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+}
+
+.hero__links a{
+    padding: 1rem 2rem;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.hero__wave{
+    width: 100%;
+    height: 150px;
+}
